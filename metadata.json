@@ -1,0 +1,9 @@
+{
+  "name": "Kisan Mitra - AI Farming Assistant",
+  "description": "An AI-powered application for farmers with dark mode, crop price checks, voice and image-enabled disease diagnosis, a pesticide information finder, and a live government schemes tracker with notifications. Now with a new logo and a mobile-first design.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ],
+  "prompt": ""
+}

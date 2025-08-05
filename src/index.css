@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Default font size */
+    font-size: 16px;
+  }
+  html.text-sm {
+    font-size: 14px;
+  }
+  html.text-lg {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar for a more polished look */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400 dark:bg-slate-600;
+}
+
+@layer components {
+  .btn-animated {
+    @apply transform transition-transform duration-150 focus:outline-none;
+  }
+  .btn-animated:hover {
+    @apply scale-[1.03];
+  }
+  .btn-animated:active {
+    @apply scale-[0.98] opacity-90;
+  }
+}
